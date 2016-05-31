@@ -75,7 +75,7 @@ if data['total_count'] > int(limit, 10):
     # Start at page 2 because we already have page 1
     page = 2
     while page <= pages:
-        newData = get_data(dataUrl, page)
+        newData = get_data(url, page)
         if len(newData['items']) > 0:
             repos += newData['items']
         page = page + 1
